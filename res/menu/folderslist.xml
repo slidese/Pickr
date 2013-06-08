@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_folder"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/menu_add_folder"/>
+
+</menu>

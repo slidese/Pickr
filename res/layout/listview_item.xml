@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toprow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <!-- Middle: Main -->
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@color/bright_grey" >
+
+        <CheckBox
+            android:id="@+id/active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" />
+
+    </FrameLayout>
+    
+    
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="40dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp" >
+	    
+		    <ImageView
+		        android:id="@+id/icon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="16dp"
+		        android:contentDescription="Album icon"
+		        android:src="@drawable/ic_action_folder_closed"
+		        android:visibility="visible" />
+		    
+		    <TextView
+		        android:id="@+id/folder"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_toRightOf="@id/icon"
+		        android:text="@string/pref_title_display_name"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+		</RelativeLayout>
+		
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:minHeight="40dp"
+		    android:orientation="horizontal"
+		    android:paddingLeft="16dp"
+		    android:paddingRight="16dp" >
+		    
+			    <ImageView
+			        android:id="@+id/document"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginRight="16dp"
+			        android:contentDescription="File folder icon"
+			        android:src="@drawable/ic_action_gplus"
+			        android:visibility="visible" />
+			    
+			    <TextView
+			        android:id="@+id/album"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_toRightOf="@id/document"
+			        android:linksClickable="true"
+			        android:text="@string/select_google_photo_album"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:textColor="@android:color/holo_blue_light" />
+			
+		</RelativeLayout>
+        
+	</LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bright_grey" />
+    
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:minWidth="60dp" >
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/ic_action_cancel_dark" />
+
+    </FrameLayout>
+    
+</LinearLayout>
+

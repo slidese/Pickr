@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="active"
+        android:summary="@string/settings_description_active"
+        android:title="@string/settings_title_active" />
+    
+    <PreferenceCategory android:title="@string/settings_header_cloud_providers" />
+    
+    <Preference
+        android:title="@string/settings_title_google"
+        android:key="provider_google"
+        android:dependency="active" >
+        
+    </Preference>
+    
+    <Preference
+        android:title="@string/settings_title_dropbox"
+        android:key="provider_dropbox"
+        android:dependency="active" >
+        
+    </Preference>
+    
+    <PreferenceCategory android:title="@string/settings_header_paths" />
+    
+    <Preference android:title="@string/settings_title_configured_paths" >
+        <intent android:action="se.slide.pickr.FILE" />
+    </Preference>
+
+</PreferenceScreen>

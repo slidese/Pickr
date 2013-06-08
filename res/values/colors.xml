@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darker_grey">#111111</color>
+	<color name="dark_grey">#222</color>
+	<color name="medium_grey">#444</color>
+	<color name="light_grey">#666</color>
+	<color name="bright_grey">#bbb</color>
+	<color name="even_brighter_grey">#ddd</color>
+	<color name="even_so_brighter_grey">#eee</color>
+	
+	<color name="error">#d71920</color>
+	<color name="warning">#f89406</color> 
+	<color name="info">#3a87ad</color>
+	
+	<color name="white">#ffffff</color>
+	
+	<!-- color name="info">#aaa</color-->
+	
+	<!-- 
+	<color name="error">#d71920</color>
+	<color name="warning">#edb766</color>
+	<color name="info">#799ae0</color>
+	 -->
+</resources>

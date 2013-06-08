@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="se.slide.pickr"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="se.slide.pickr.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            
+        </activity>
+        
+        <activity
+            android:name="com.mburman.fileexplore.FileExplore"
+            android:label="@string/title_activity_settings" >
+            
+            <!-- intent-filter>
+                <action android:name="se.slide.pickr.FILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter-->
+        </activity>
+        
+        <activity
+            android:name="se.slide.pickr.ConfiguredPathsActivity"
+            android:label="@string/title_activity_settings" >
+            
+            <intent-filter>
+                <action android:name="se.slide.pickr.FILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="se.slide.pickr.SettingsActivity" />
+        </activity>
+        
+        <activity
+            android:name="se.slide.pickr.BrowseFoldersActivity"
+            android:label="@string/title_activity_settings" >
+            
+        </activity>
+    </application>
+
+</manifest>
